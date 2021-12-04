@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    
+
+
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <HR WIDTH="75%" COLOR="#000000" SIZE="5">
+    </header>
+    <nav>
+        
+      <button><a href ="/index"> homepage </a></button>
+ 
+      <button><a href="/resume"> Resume</a></button>
+      <button> <a href="/Facts">Fun Facts</a><br> 
+        <button> <a href="/blog"> Blog</a><br></button> 
+        <button> <a href="/game">Trivia</a><br></button> 
+
+      </section>
+    </nav>
+   
+        <h2><font face="Arial" size="20px" color="#000000">Clean the oceans</font><h2>
+
+        
+        <p>Below we will talk abut mark robers plans to help clean the oceans along with mr beast</p>
+
+    </section>
+    <section>
+        <button onclick="window.location.href='https://www.youtube.com/watch?v=pXDx6DjNLDU';">
+            "Click me to see Mark Robers and mr beasts plan to clean the oceans"
+
+            <button onclick="window.location.href=' https://seasave.org/donations/';">
+                "Click me to see how you can contirbute" <br>
+                <br>
+    <section>
+
+    </section>
+
+        </section>
+        <h3>Mark Rober and Mr Beast are both planning on helping clean the ocean, by raising $30 million dollars and for each dollar donated will equal one pound of trash that will be removed from the ocean.</h3>
+        <h4>Mark was a former NASA engineer that worked on the mars rover and Mr beast is a youtuber with a huge following and is known for spening crazy amounts of money on his youtube videos such as giving pizza delivery drivers a whole house</h4>
+        <h5>It is a great plan with already some of the biggest influencers joining in on the cuases donating millions, they were able to raise $10 million dollars in just 3 days</h5>
+        <h6>They had a fundraiser a few years back called team tress where for every dollar donated they planted 1 tree and had a goal of $20million dollars which was reached and was also helped by elon musk himself</h6>
+        <h7>This is such a great cause that more people should know about and try to help out either by donating or spreading the word, espcailly within the next 10-20 years there will be more plastic than fish </h7>
+        <h8>in the video it also shows teams that are helping with this cause and they also show where alot of pollution comes from and how they get in the oceans , which are mainly from the less develped contrys that dont have alot of access to dispose trash properly so they just throw it in the rivers which lead to the ocean </h8>
+        <table class="input">
+            <th id="lastcomment">Comment</th>
+            <th id="lastcommentdate">BOX</th>
+            <tr>
+              <td>
+                
+                <label for="toggle">Enter comment here</label>
+                <dialog>
+                  <form id="engcomment">
+          
+                    <input type="text" name="message" id="user_input">
+                  </form>
+          
+                  <input type="submit" onclick="showInput();">
+                  <label for="toggle">close </label>
+                </dialog>
+                <p><span id='display'></span></p>
+              </td>
+              <td></td>
+            </tr>
+          
+            <script language="JavaScript">
+              function showInput() {
+                document.getElementById('display').innerHTML =
+                  document.getElementById("user_input").value;
+              }
+              const localStorageKey = "myData";
+document.getElementById("user_input").value = getDataFromLocalStorage();
+document.getElementById('display').innerHTML = getDataFromLocalStorage();
+
+function showInput() {
+  var user_input = document.getElementById("user_input").value;
+  setDataToLocalStorage(user_input);
+  document.getElementById('display').innerHTML = user_input;
+}
+
+function setDataToLocalStorage(newData){
+   localStorage.setItem(localStorageKey, newData);
+}
+
+function getDataFromLocalStorage(){
+  return localStorage.getItem(localStorageKey) || "";
+}
+            </script>
+        <hr>
+
+        <hr>
+        <footer>
+            &copy;2021 Ivezaj3@oakland.edu
+        </footer>
+        <body bgcolor="#c0c0c0"></body>
+</body>
+
+
+</html>
